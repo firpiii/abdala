@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="EsAbundante.js"></script>
+    <title>Numero Abundante</title>
+</head>
+
+<body>
+    <header>
+        <h1>Numero Abundante</h1>
+    </header>
+    <script>
+        do {
+            x = prompt('Ingrese un numero y averigue si es abundante');
+            x = parseInt(x);
+        } while (isNaN(x));
+
+        cartel = 'No Es Abundante';
+
+        if(EsAbundante(x) == true){
+            cartel = 'Es Abundante';
+        }
+        
+        document.write('<p>'+cartel+'</p>')
+    </script>
+</body>
+
+</html>
