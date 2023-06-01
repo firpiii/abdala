@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Es Narciso</title>
+    <script src="EsNarciso.js"></script>
+
+<body>
+    <script>
+        let x;
+        do {
+            x = prompt('Ingrese valor para saber si es narcisista');
+            x = parseInt(x);
+        } while (isNaN(x) || x == 0);
+
+        for (let i = 0; i <= x; i++) {
+
+            if (EsNarciso(i) == false) { document.write(i + 'No es narcisista' + '<br>'); }
+            if (EsNarciso(i) == true) { document.write(i + 'Es narcisista' + '<br>'); }
+        }
+
+    </script>
+</body>
+
+</html>
