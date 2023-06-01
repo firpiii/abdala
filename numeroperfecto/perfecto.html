@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Es perfecto</title>
+    <script src="Esperfecto.js"></script>
+
+<body>
+    <script>
+        let x;
+        do {
+            x = prompt('Ingrese valor para saber si es perfecto');
+            x = parseInt(x);
+        } while (isNaN(x) || x == 0);
+
+            if (Esperfecto(x) == false) { document.write(x + ' No es perfecto' + '<br>'); }
+            if (Esperfecto(x) == true) { document.write(x + ' Es perfecto' + '<br>'); }
+
+    </script>
+</body>
+
+</html>
