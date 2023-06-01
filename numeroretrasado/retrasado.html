@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Es retrasdo</title>
+    <script src="Esretrasado.js"></script>
+
+<body>
+    <script>
+        let x;
+        do {
+            x = prompt('Ingrese valor para saber si es retrasado');
+            x = parseInt(x);
+        } while (isNaN(x) || x == 0);
+
+            if (Esretrasado(x) == false) { document.write(x + ' No es retrasado' + '<br>'); }
+            if (Esretrasado(x) == true) { document.write(x + ' Es retrasado' + '<br>'); }
+
+    </script>
+</body>
+
+</html>
