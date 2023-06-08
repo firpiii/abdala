@@ -1,25 +1,13 @@
-const espalidd= (text)=>{
-    let flag = false;
-    let splitText= [...text];
-    let reversedText= splitText.reverse();
-    let joinedText= reversedText.join('');
-    for(leti=0; i<text.length;i++){
-        if(text.charAt(i) == reversedText.charAt(i)){
-            flag = true;
-        }
-        if(text.charAt(i) != reversedText.charAt(i)){
-            flag = false;
-        }
-    }
-   return flag;
-}
+let texto = prompt("");
+let poli = texto.split('');
+poli = poli.reverse("").join('');
 
 
-function espalin(text) {
-    if (espalin(text) == true) {
-        document.write('Es Palindromo');
-    } if (espalin(text) == false) {
-        document.write('No es Palindromo');
-    }
+if (texto == poli) {
+    alert("es palindromo");
+}else{
+    alert("no es palindromo");
 }
-espalin('uz verde');
+
+document.write(poli+"<br>   ");
+document.write(texto);
