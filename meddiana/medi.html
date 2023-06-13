@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediana</title>
+</head>
+<body>
+    <script src="medi.js"></script>
+    <script>
+        let tam, elementos = [];
+
+        tam = prompt( 'Ingrese tamaño del vector: ', '');
+
+        for (let i = 0; i < tam; i++) {
+            elementos[i] = parseInt(prompt('Ingrese el numero ' + (i + 1) + ' del vector:', ''));
+        }
+
+        document.write( 'La mediana del vector es: ' + mediaNa(elementos) );
+    </script>
+</body>
+</html
