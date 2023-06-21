@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector</title>
+</head>
+<body>
+    <script src="vec.js"></script>
+    <script>
+        const a = parseInt(prompt('Ingrese la cantidad de elementos para el vector:', '' ) );
+        const b = Vector(a);
+        const prom = Promedio(b);
+        const z = Mayor(b, prom);
+        const cant = Contar(b);
+        const suma = Suma(b);
+        const u = Generar(b);
+
+
+        document.write( "Primer vector: " + b.join(", ") + "<br>" );
+        document.write( "Promedio: " + prom + "<br>" );
+        document.write( "Segundo vector: "+ z.join(", ") + "<br>" );
+        document.write( "Múltiplos de 2 y 3: " + cant + "<br>" );
+        document.write( "Suma: " + suma + "<br>" );
+        document.write( "Tercer vector: " + u.join(", ") + "<br>" );
+    </script>
+</body>
+</html> 
