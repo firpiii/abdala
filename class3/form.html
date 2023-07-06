@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form id="formulario">
+        <p>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" required maxlength="15" placeholder="nombre">
+        </p>
+        <p>
+        <label for="dni">DNI:</label><br>
+        <input type="number" id="dni" required placeholder="DNI sin espacios">
+        </p>
+        <p>
+        <label for="fechaN">Fecha Nac:</label><br>
+        <input type="number" id="fechaN"  required placeholder="fecha de Nacimiento">
+        </p>
+        <p>
+        <label for="genero">Genero:</label><br>
+        <select id="genero">
+            <option value="0">Selecciona genero</option>
+            <option value="1">Femenino</option>
+            <option value="2">Masculino</option>
+            <option value="3">No binario</option>
+        </select>
+        </p>
+        <p>
+        <label for="peso">Peso:</label><br>
+        <input type="number" id="peso" required placeholder="peso en kilos">
+        </p>
+        <p>
+        <label for="altura">Altura:</label><br>
+        <input type="number" id="altura" required placeholder="altura en metros">
+        </p>
+        <p>
+        
+            <button type="submit">Enviar Formulario</button>
+        </p>
+        <div id="datos"></div>
+        <div id="anti"></div>
+        <div id="fecha"></div>
+        
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
